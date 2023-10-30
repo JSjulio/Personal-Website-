@@ -8,7 +8,7 @@ body {
     font-family: "poppins", sans-serif;
     background-color: grey;
 }
-.container { 
+main { 
     display: flex; 
     width: 100%; 
     height: auto;
@@ -47,6 +47,7 @@ h1 {
     font-weight: 800; 
     font-size: 3.6rem;
     padding: 0px 0px 0px 20px;
+    text-decoration: underline;
 
 }
 h2 { 
@@ -57,11 +58,10 @@ h2 {
     padding: 0px 0px 0px 20px;
 }
 h3 { 
-    font-size: 1.4rem;
-    padding: 0px 0px 0px 20px;
-
+    font-size: 14px;
 }
 p { 
+    display: flex;
     font-weight: 400;
     font-size: 1.8rem;
     border: 2px solid transparent;
@@ -105,10 +105,21 @@ footer {
     }
 }
 
-@media  (max-width: 330px) { 
+@media  (max-width: 369px) { 
     body { 
         position: fixed;
         height: auto;
         width: auto;
+        
+    }
+    img { 
+        width: 200px;
+        padding: 0px; 
+    }
+}
+
+@media  (max-width: 230px) { 
+    h2, h3, p { 
+        font-size: .5rem; 
     }
 }
